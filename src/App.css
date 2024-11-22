@@ -1,0 +1,112 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.app-container {
+  min-height: 100vh;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  transition: all 0.3s;
+}
+
+.converter-card {
+  width: 100%;
+  max-width: 1200px;
+  margin-top: 40px;
+  transition: all 0.3s;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.card-title {
+  margin: 0 !important;
+  transition: color 0.3s;
+}
+
+.theme-switch {
+  margin-left: 16px;
+}
+
+.converter-row {
+  margin-top: 20px;
+}
+
+.input-card,
+.output-card {
+  height: 100%;
+  transition: all 0.3s;
+}
+
+.text-input,
+.pinyin-output {
+  font-size: 16px;
+  line-height: 1.8;
+  resize: none;
+  font-family: "Microsoft YaHei", sans-serif;
+  transition: all 0.3s;
+}
+
+/* 自定义滚动条样式 */
+.text-input::-webkit-scrollbar,
+.pinyin-output::-webkit-scrollbar {
+  width: 8px;
+}
+
+.text-input::-webkit-scrollbar-track,
+.pinyin-output::-webkit-scrollbar-track {
+  background: transparent;
+  border-radius: 4px;
+}
+
+.text-input::-webkit-scrollbar-thumb,
+.pinyin-output::-webkit-scrollbar-thumb {
+  background: rgba(136, 136, 136, 0.5);
+  border-radius: 4px;
+}
+
+.text-input::-webkit-scrollbar-thumb:hover,
+.pinyin-output::-webkit-scrollbar-thumb:hover {
+  background: rgba(85, 85, 85, 0.8);
+}
